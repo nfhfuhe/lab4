@@ -1,5 +1,5 @@
 <?php
-function PerfectNumber(array $numbers)
+function perfectNumber(array $numbers):array
 {
     $result = [];
     foreach ($numbers as $number) {
@@ -16,7 +16,7 @@ function PerfectNumber(array $numbers)
     return $result;
 }
 $numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 28];
-$PerfectNumbers = PerfectNumber($numbers);
+$PerfectNumbers = perfectNumber($numbers);
 echo "Идеальные числа : ";
 foreach ($PerfectNumbers as $number) {
     echo  $number . " | ";

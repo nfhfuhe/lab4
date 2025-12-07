@@ -1,5 +1,5 @@
 <?php
-function BestString($text)
+function bestString($text): string
 {
     $strings = explode(" ",$text);
     $LastCountString = 0;
@@ -18,5 +18,5 @@ function BestString($text)
     return $BestString;
 }
 $text = "privet robot kak tvoi dela? y mena vot kruto y mena ne ochen otvetil robot";
-$BestString = BestString($text);
+$BestString = bestString($text);
 echo "самое распратранённое слово : " . $BestString;
